@@ -1,0 +1,1033 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =15120
+    DatasheetFontHeight =11
+    ItemSuffix =76
+    Left =2640
+    Top =720
+    RecSrcDt = Begin
+        0xeefde5b30c76e540
+    End
+    RecordSource ="qryRptLeads"
+    Caption ="Report Leads By Month"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Line
+            BorderLineStyle =0
+            BorderThemeColorIndex =0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            ShowDatePicker =0
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            GroupOn =4
+            ControlSource ="leadDate"
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="leadCategory"
+        End
+        Begin BreakLevel
+            ControlSource ="leadDate"
+        End
+        Begin BreakLevel
+            ControlSource ="leadDate"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =600
+            Name ="ReportHeader"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+            Begin
+                Begin Label
+                    Left =60
+                    Top =60
+                    Width =8280
+                    Height =540
+                    FontSize =20
+                    Name ="Label38"
+                    Caption ="Google Local Services - Leads By Month / Category"
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =8340
+                    LayoutCachedHeight =600
+                End
+            End
+        End
+        Begin PageHeader
+            Height =675
+            Name ="PageHeaderSection"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin Label
+                    TextAlign =1
+                    Left =360
+                    Top =60
+                    Width =1845
+                    Height =300
+                    FontWeight =700
+                    Name ="leadDate by Month_Label"
+                    Caption =" Month"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="leadDate_by_Month_Label"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =2205
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =3000
+                    Top =60
+                    Width =1320
+                    Height =300
+                    FontWeight =700
+                    Name ="leadNumber_Label"
+                    Caption ="Number"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =3000
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =4320
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =9300
+                    Top =60
+                    Width =840
+                    Height =300
+                    FontWeight =700
+                    Name ="leadZip_Label"
+                    Caption ="Lead Zip"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =9300
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =10140
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =4500
+                    Top =60
+                    Width =1050
+                    Height =300
+                    FontWeight =700
+                    Name ="leadStatus_Label"
+                    Caption ="Status"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =4500
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =5550
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =6000
+                    Top =60
+                    Width =1230
+                    Height =300
+                    FontWeight =700
+                    Name ="leadAddress_Label"
+                    Caption ="Address"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =6000
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =7230
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =8040
+                    Top =60
+                    Width =840
+                    Height =300
+                    FontWeight =700
+                    Name ="leadCity_Label"
+                    Caption ="City"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =8040
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =8880
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =1680
+                    Top =360
+                    Width =795
+                    Height =300
+                    FontWeight =700
+                    Name ="leadCustomer Name_Label"
+                    Caption =" Name"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="leadCustomer_Name_Label"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =1680
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =2475
+                    LayoutCachedHeight =660
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =4500
+                    Top =360
+                    Width =1035
+                    Height =300
+                    FontWeight =700
+                    Name ="leadNotes_Label"
+                    Caption ="leadNotes"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =4500
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =5535
+                    LayoutCachedHeight =660
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =10440
+                    Top =60
+                    Width =1455
+                    Height =300
+                    FontWeight =700
+                    Name ="NewCustomer_Label"
+                    Caption ="New Customer"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =10440
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =11895
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =11940
+                    Top =60
+                    Width =1215
+                    Height =300
+                    FontWeight =700
+                    Name ="leadWOAmount_Label"
+                    Caption ="WO Amount"
+                    Tag ="DetachedLabel"
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =11940
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =13155
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    Left =13500
+                    Top =60
+                    Width =1380
+                    Height =300
+                    FontWeight =700
+                    Name ="Label53"
+                    Caption ="Lead Charge"
+                    LayoutCachedLeft =13500
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =14880
+                    LayoutCachedHeight =360
+                End
+                Begin Label
+                    Left =1740
+                    Top =60
+                    Width =1020
+                    Height =300
+                    FontWeight =700
+                    Name ="Label54"
+                    Caption ="Date"
+                    LayoutCachedLeft =1740
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =2760
+                    LayoutCachedHeight =360
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            ForceNewPage =1
+            Height =315
+            Name ="GroupHeader0"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    DecimalPlaces =0
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =360
+                    Width =1875
+                    Height =315
+                    FontWeight =700
+                    Name ="leadDate by Month"
+                    ControlSource ="=Format$([leadDate], \"mmmm yyyy\",0,0)"
+                    EventProcPrefix ="leadDate_by_Month"
+
+                    LayoutCachedLeft =360
+                    LayoutCachedWidth =2235
+                    LayoutCachedHeight =315
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =315
+            BreakLevel =1
+            Name ="GroupHeader2"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    DecimalPlaces =0
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =1500
+                    Width =2295
+                    Height =315
+                    FontWeight =700
+                    Name ="leadCategory"
+                    ControlSource ="leadCategory"
+
+                    LayoutCachedLeft =1500
+                    LayoutCachedWidth =3795
+                    LayoutCachedHeight =315
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =855
+            Name ="Detail"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =2940
+                    Width =1560
+                    Height =315
+                    TabIndex =1
+                    Name ="leadNumber"
+                    ControlSource ="leadNumber"
+                    InputMask ="!\\(999\") \"000\\-0000;0;_"
+
+                    LayoutCachedLeft =2940
+                    LayoutCachedWidth =4500
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =9360
+                    Width =780
+                    Height =315
+                    TabIndex =7
+                    Name ="leadZip"
+                    ControlSource ="leadZip"
+
+                    LayoutCachedLeft =9360
+                    LayoutCachedWidth =10140
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =1500
+                    Width =1305
+                    Height =315
+                    Name ="leadDate"
+                    ControlSource ="leadDate"
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =1500
+                    LayoutCachedWidth =2805
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =4500
+                    Width =1560
+                    Height =315
+                    TabIndex =2
+                    Name ="leadStatus"
+                    ControlSource ="ListStatus"
+
+                    LayoutCachedLeft =4500
+                    LayoutCachedWidth =6060
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =5820
+                    Width =2055
+                    Height =315
+                    ColumnWidth =2430
+                    TabIndex =3
+                    Name ="leadAddress"
+                    ControlSource ="leadAddress"
+
+                    LayoutCachedLeft =5820
+                    LayoutCachedWidth =7875
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =8040
+                    Width =1395
+                    Height =315
+                    TabIndex =4
+                    Name ="leadCity"
+                    ControlSource ="leadCity"
+
+                    LayoutCachedLeft =8040
+                    LayoutCachedWidth =9435
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =1680
+                    Top =420
+                    Width =2820
+                    Height =315
+                    TabIndex =9
+                    Name ="leadCustomer Name"
+                    ControlSource ="leadCustomer Name"
+                    EventProcPrefix ="leadCustomer_Name"
+
+                    LayoutCachedLeft =1680
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =4500
+                    LayoutCachedHeight =735
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =4575
+                    Top =420
+                    Width =6420
+                    Height =315
+                    ColumnWidth =2655
+                    TabIndex =10
+                    Name ="leadNotes"
+                    ControlSource ="leadNotes"
+
+                    LayoutCachedLeft =4575
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =10995
+                    LayoutCachedHeight =735
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =10680
+                    Width =360
+                    Height =315
+                    TabIndex =5
+                    Name ="NewCustomer"
+                    ControlSource ="NewCustomer"
+
+                    LayoutCachedLeft =10680
+                    LayoutCachedWidth =11040
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =11715
+                    Width =1560
+                    Height =315
+                    TabIndex =6
+                    Name ="leadWOAmount"
+                    ControlSource ="leadWOAmount"
+                    Format ="$#,##0.00;($#,##0.00)"
+
+                    LayoutCachedLeft =11715
+                    LayoutCachedWidth =13275
+                    LayoutCachedHeight =315
+                    CurrencySymbol ="$"
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =13560
+                    Height =315
+                    TabIndex =8
+                    Name ="leadEstCharge"
+                    ControlSource ="leadEstCharge"
+                    Format ="$#,##0.00;($#,##0.00)"
+
+                    LayoutCachedLeft =13560
+                    LayoutCachedWidth =15000
+                    LayoutCachedHeight =315
+                    CurrencySymbol ="$"
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =30
+                    Top =30
+                    Width =990
+                    Height =180
+                    Name ="Label47"
+                    Caption =" "
+                    GroupTable =1
+                    LayoutCachedLeft =30
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =1020
+                    LayoutCachedHeight =210
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    TextAlign =1
+                    Left =30
+                    Top =270
+                    Width =990
+                    Height =240
+                    Name ="Label49"
+                    Caption =" "
+                    GroupTable =1
+                    LayoutCachedLeft =30
+                    LayoutCachedTop =270
+                    LayoutCachedWidth =1020
+                    LayoutCachedHeight =510
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =900
+            BreakLevel =1
+            Name ="GroupFooter3"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =1500
+                    Top =180
+                    Width =13560
+                    Name ="Text28"
+                    ControlSource ="=\"Summary for \" & \"'leadCategory' = \" & \" \" & [leadCategory] & \" (\" & Co"
+                        "unt(*) & \" \" & IIf(Count(*) = 1, \"detail record\", \"detail records\") & \")\""
+
+                    LayoutCachedLeft =1500
+                    LayoutCachedTop =180
+                    LayoutCachedWidth =15060
+                    LayoutCachedHeight =420
+                End
+                Begin Label
+                    Left =1500
+                    Top =420
+                    Width =480
+                    Height =315
+                    FontWeight =700
+                    Name ="Label29"
+                    Caption ="Sum"
+                    LayoutCachedLeft =1500
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =1980
+                    LayoutCachedHeight =735
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =10680
+                    Top =420
+                    Width =360
+                    Height =315
+                    TabIndex =1
+                    Name ="Sum Of NewCustomer"
+                    ControlSource ="=Sum([NewCustomer])"
+                    EventProcPrefix ="Sum_Of_NewCustomer"
+
+                    LayoutCachedLeft =10680
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =11040
+                    LayoutCachedHeight =735
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =12075
+                    Top =420
+                    Width =1185
+                    Height =315
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Sum Of leadWOAmount"
+                    ControlSource ="=Sum([leadWOAmount])"
+                    Format ="$#,##0.00;($#,##0.00)"
+                    EventProcPrefix ="Sum_Of_leadWOAmount"
+
+                    LayoutCachedLeft =12075
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =13260
+                    LayoutCachedHeight =735
+                    CurrencySymbol ="$"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =13575
+                    Top =420
+                    Width =1485
+                    Height =315
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Text55"
+                    ControlSource ="=Sum([leadEstCharge])"
+                    Format ="$#,##0.00;($#,##0.00)"
+
+                    LayoutCachedLeft =13575
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =15060
+                    LayoutCachedHeight =735
+                    CurrencySymbol ="$"
+                End
+                Begin Line
+                    Left =120
+                    Top =120
+                    Width =14820
+                    Name ="Line60"
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =14940
+                    LayoutCachedHeight =120
+                End
+                Begin Line
+                    Left =60
+                    Top =840
+                    Width =14820
+                    Name ="Line61"
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =840
+                    LayoutCachedWidth =14880
+                    LayoutCachedHeight =840
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    IMESentenceMode =3
+                    Left =8520
+                    Top =420
+                    Width =1020
+                    Height =315
+                    TabIndex =4
+                    Name ="Text69"
+                    ControlSource ="=Avg([leadEstCharge])"
+                    Format ="Fixed"
+
+                    LayoutCachedLeft =8520
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =9540
+                    LayoutCachedHeight =735
+                End
+                Begin Label
+                    Left =6960
+                    Top =420
+                    Width =1440
+                    Height =300
+                    Name ="Label71"
+                    Caption ="Avg Lead Cost:"
+                    LayoutCachedLeft =6960
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =8400
+                    LayoutCachedHeight =720
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =1020
+            Name ="GroupFooter1"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =360
+                    Top =180
+                    Width =14700
+                    Name ="Text26"
+                    ControlSource ="=\"Summary for \" & \"'leadDate' = \" & \" \" & [leadDate] & \" (\" & Count(*) &"
+                        " \" \" & IIf(Count(*) = 1, \"detail record\", \"detail records\") & \")\""
+
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =180
+                    LayoutCachedWidth =15060
+                    LayoutCachedHeight =420
+                End
+                Begin Label
+                    Left =360
+                    Top =480
+                    Width =480
+                    Height =315
+                    Name ="Label27"
+                    Caption ="Sum"
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =840
+                    LayoutCachedHeight =795
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =10680
+                    Top =480
+                    Width =360
+                    Height =315
+                    TabIndex =1
+                    Name ="Sum Of NewCustomer1"
+                    ControlSource ="=Sum([NewCustomer])"
+                    EventProcPrefix ="Sum_Of_NewCustomer1"
+
+                    LayoutCachedLeft =10680
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =11040
+                    LayoutCachedHeight =795
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =12135
+                    Top =480
+                    Width =1140
+                    Height =315
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Sum Of leadWOAmount1"
+                    ControlSource ="=Sum([leadWOAmount])"
+                    Format ="$#,##0.00;($#,##0.00)"
+                    EventProcPrefix ="Sum_Of_leadWOAmount1"
+
+                    LayoutCachedLeft =12135
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =13275
+                    LayoutCachedHeight =795
+                    CurrencySymbol ="$"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =13740
+                    Top =480
+                    Width =1320
+                    Height =315
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Text57"
+                    ControlSource ="=Sum([leadEstCharge])"
+                    Format ="$#,##0.00;($#,##0.00)"
+
+                    LayoutCachedLeft =13740
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =15060
+                    LayoutCachedHeight =795
+                    CurrencySymbol ="$"
+                End
+                Begin Line
+                    Left =360
+                    Top =120
+                    Width =14580
+                    Name ="Line62"
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =14940
+                    LayoutCachedHeight =120
+                End
+                Begin Line
+                    Left =360
+                    Top =900
+                    Width =14640
+                    Name ="Line63"
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =900
+                    LayoutCachedWidth =15000
+                    LayoutCachedHeight =900
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    IMESentenceMode =3
+                    Left =8520
+                    Top =480
+                    Width =1020
+                    Height =315
+                    TabIndex =4
+                    Name ="Text72"
+                    ControlSource ="=Avg([leadEstCharge])"
+                    Format ="Fixed"
+
+                    LayoutCachedLeft =8520
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =9540
+                    LayoutCachedHeight =795
+                End
+                Begin Label
+                    Left =6960
+                    Top =480
+                    Width =1440
+                    Height =300
+                    Name ="Label73"
+                    Caption ="Avg Lead Cost:"
+                    LayoutCachedLeft =6960
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =8400
+                    LayoutCachedHeight =780
+                End
+            End
+        End
+        Begin PageFooter
+            Height =690
+            Name ="PageFooterSection"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =60
+                    Top =360
+                    Width =5040
+                    Height =330
+                    Name ="Text39"
+                    ControlSource ="=Now()"
+                    Format ="Long Date"
+
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =5100
+                    LayoutCachedHeight =690
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =10020
+                    Top =360
+                    Width =5040
+                    Height =330
+                    TabIndex =1
+                    Name ="Text40"
+                    ControlSource ="=\"Page \" & [Page] & \" of \" & [Pages]"
+
+                    LayoutCachedLeft =10020
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =15060
+                    LayoutCachedHeight =690
+                End
+                Begin Label
+                    Left =60
+                    Width =3480
+                    Height =315
+                    Name ="Label68"
+                    Caption ="Report Author - Terry Van Huss 06/23"
+                    LayoutCachedLeft =60
+                    LayoutCachedWidth =3540
+                    LayoutCachedHeight =315
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =315
+            Name ="ReportFooter"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =10140
+                    Width =900
+                    Height =315
+                    FontWeight =700
+                    Name ="NewCustomer Grand Total Sum"
+                    ControlSource ="=Sum([NewCustomer])"
+                    EventProcPrefix ="NewCustomer_Grand_Total_Sum"
+
+                    LayoutCachedLeft =10140
+                    LayoutCachedWidth =11040
+                    LayoutCachedHeight =315
+                End
+                Begin Label
+                    Left =60
+                    Width =1140
+                    Height =315
+                    Name ="Label31"
+                    Caption ="Grand Total"
+                    LayoutCachedLeft =60
+                    LayoutCachedWidth =1200
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    IMESentenceMode =3
+                    Left =11820
+                    Width =1500
+                    Height =315
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="leadWOAmount Grand Total Sum"
+                    ControlSource ="=Sum([leadWOAmount])"
+                    Format ="$#,##0.00;($#,##0.00)"
+                    EventProcPrefix ="leadWOAmount_Grand_Total_Sum"
+
+                    LayoutCachedLeft =11820
+                    LayoutCachedWidth =13320
+                    LayoutCachedHeight =315
+                    CurrencySymbol ="$"
+                End
+                Begin Label
+                    Left =60
+                    Width =1155
+                    Height =315
+                    FontWeight =700
+                    Name ="Label35"
+                    Caption ="Grand Total"
+                    LayoutCachedLeft =60
+                    LayoutCachedWidth =1215
+                    LayoutCachedHeight =315
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =13500
+                    Width =1500
+                    Height =315
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Text66"
+                    ControlSource ="=Sum([leadEstCharge])"
+                    Format ="$#,##0.00;($#,##0.00)"
+
+                    LayoutCachedLeft =13500
+                    LayoutCachedWidth =15000
+                    LayoutCachedHeight =315
+                    CurrencySymbol ="$"
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    IMESentenceMode =3
+                    Left =8520
+                    Width =1020
+                    Height =315
+                    TabIndex =3
+                    Name ="Text74"
+                    ControlSource ="=Avg([leadEstCharge])"
+                    Format ="Fixed"
+
+                    LayoutCachedLeft =8520
+                    LayoutCachedWidth =9540
+                    LayoutCachedHeight =315
+                End
+                Begin Label
+                    Left =6960
+                    Width =1440
+                    Height =300
+                    Name ="Label75"
+                    Caption ="Avg Lead Cost:"
+                    LayoutCachedLeft =6960
+                    LayoutCachedWidth =8400
+                    LayoutCachedHeight =300
+                End
+            End
+        End
+    End
+End

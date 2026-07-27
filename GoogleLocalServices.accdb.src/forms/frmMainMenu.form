@@ -1,0 +1,313 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =8884
+    DatasheetFontHeight =11
+    ItemSuffix =9
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x0f4ea756968de540
+    End
+    Caption ="Main Menu"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =60.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CommandButton
+            FontSize =11
+            FontWeight =400
+            FontName ="Calibri"
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =1
+            Gradient =12
+            BackThemeColorIndex =4
+            BackTint =60.0
+            BorderLineStyle =0
+            BorderThemeColorIndex =4
+            BorderTint =60.0
+            ThemeFontIndex =1
+            HoverThemeColorIndex =4
+            HoverTint =40.0
+            PressedThemeColorIndex =4
+            PressedShade =75.0
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
+        End
+        Begin Section
+            Height =7560
+            Name ="Detail"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2940
+                    Top =2520
+                    Width =2850
+                    Height =405
+                    Name ="Command0"
+                    Caption ="Charges By Date"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="OpenForm"
+                            Argument ="frmChargeByDateRange"
+                            Argument ="0"
+                            Argument =""
+                            Argument =""
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Command0\" xmlns=\"http://schemas.microsoft.com/office/acces"
+                                "sservices/2009/11/application\"><Statements><Action Name=\"OpenForm\"><Argument "
+                                "Name=\"FormName\">frmChargeByDate"
+                        End
+                        Begin
+                            Comment ="_AXL:Range</Argument></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+
+                    LayoutCachedLeft =2940
+                    LayoutCachedTop =2520
+                    LayoutCachedWidth =5790
+                    LayoutCachedHeight =2925
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2940
+                    Top =3060
+                    Width =2850
+                    Height =405
+                    TabIndex =1
+                    Name ="Command1"
+                    Caption ="Leads By Month Report"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="OpenForm"
+                            Argument ="frmLeadsByMonthByDateRange"
+                            Argument ="0"
+                            Argument =""
+                            Argument =""
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Command1\" xmlns=\"http://schemas.microsoft.com/office/acces"
+                                "sservices/2009/11/application\"><Statements><Action Name=\"OpenForm\"><Argument "
+                                "Name=\"FormName\">frmLeadsByMonth"
+                        End
+                        Begin
+                            Comment ="_AXL:ByDateRange</Argument></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+
+                    LayoutCachedLeft =2940
+                    LayoutCachedTop =3060
+                    LayoutCachedWidth =5790
+                    LayoutCachedHeight =3465
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2940
+                    Top =1980
+                    Width =2850
+                    Height =405
+                    TabIndex =2
+                    Name ="Command3"
+                    Caption ="Call Table"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="OpenQuery"
+                            Argument ="qryOpenTblCalls"
+                            Argument ="0"
+                            Argument ="1"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Command3\" xmlns=\"http://schemas.microsoft.com/office/acces"
+                                "sservices/2009/11/application\"><Statements><Action Name=\"OpenQuery\"><Argument"
+                                " Name=\"QueryName\">qryOpenTblCal"
+                        End
+                        Begin
+                            Comment ="_AXL:ls</Argument></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+
+                    LayoutCachedLeft =2940
+                    LayoutCachedTop =1980
+                    LayoutCachedWidth =5790
+                    LayoutCachedHeight =2385
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4080
+                    Top =5100
+                    Width =576
+                    Height =576
+                    TabIndex =3
+                    Name ="Command4"
+                    Caption ="Command4"
+                    ControlTipText ="Quit App"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Quit"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Command4\" xmlns=\"http://schemas.microsoft.com/office/acces"
+                                "sservices/2009/11/application\"><Statements><Action Name=\"QuitAccess\"><Argumen"
+                                "t Name=\"Options\">Prompt</Argume"
+                        End
+                        Begin
+                            Comment ="_AXL:nt></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000003255d6273255d68d ,
+                        0x3255d6cf3255d6ff3255d6ff3255d6cf3255d68d3255d6270000000000000000 ,
+                        0x00000000000000000000000000000000000000003255d6723255d6f63255d6ff ,
+                        0x3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6f63255d67200000000 ,
+                        0x0000000000000000000000003255d6063255d6b73255d6ff3255d6ff3255d6ff ,
+                        0x3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6b7 ,
+                        0x3255d60600000000000000003255d6933255d6ff3255d6ff3759d7f94d6bdbe5 ,
+                        0x3255d6ff3255d6ff3255d6ff3255d6ff4d6bdbe53759d7f93255d6ff3255d6ff ,
+                        0x3255d690000000003255d62d3255d6fc3255d6ff3c5ed8f4eef1fccefcfcfee5 ,
+                        0x4a69dbe73255d6ff3255d6ff4a69dbe7fcfcfee5eef1fcce3c5ed8f43255d6ff ,
+                        0x3255d6fc3255d62d3255d6933255d6ff3255d6ff3457d6fce4e9fac8ffffffff ,
+                        0xfafbfee04766dae94766dae9fafbfee0ffffffffe4e9fac83759d7f93255d6ff ,
+                        0x3255d6ff3255d6903255d6db3255d6ff3255d6ff3255d6ff3759d7f9e8ecfaca ,
+                        0xfffffffff9fafedcf8f9fedaffffffffe8ecfaca3759d7f93255d6ff3255d6ff ,
+                        0x3255d6ff3255d6d53255d6f93255d6ff3255d6ff3255d6ff3255d6ff395bd7f6 ,
+                        0xeceffbcdffffffffffffffffeceffbcd395bd7f63255d6ff3255d6ff3255d6ff ,
+                        0x3255d6ff3255d6f33255d6f93255d6ff3255d6ff3255d6ff3255d6ff395bd7f6 ,
+                        0xf2f4fcd3fffffffffffffffff2f4fcd33c5ed8f43255d6ff3255d6ff3255d6ff ,
+                        0x3255d6ff3255d6f03255d6d83255d6ff3255d6ff3255d6ff395bd7f6eff2fcd0 ,
+                        0xfffffffff5f6fdd4f5f6fdd4ffffffffeff2fcd0395bd7f63255d6ff3255d6ff ,
+                        0x3255d6ff3255d6d53255d6903255d6ff3255d6ff3759d7f9ebeefbcbffffffff ,
+                        0xf8f9feda4162d9ee4162d9eef8f9fedaffffffffebeefbcb3759d7f93255d6ff ,
+                        0x3255d6ff3255d68d3255d62d3255d6fc3255d6ff395bd7f6ebeefbcbf9fafede ,
+                        0x4464daec3255d6ff3255d6ff4464daecf9fafedeebeefbcb395bd7f63255d6ff ,
+                        0x3255d6fc3255d62a000000003255d6903255d6ff3255d6ff3759d7f94766dae9 ,
+                        0x3255d6ff3255d6ff3255d6ff3255d6ff4766dae93759d7f93255d6ff3255d6ff ,
+                        0x3255d68d00000000000000003255d6063255d6b73255d6ff3255d6ff3255d6ff ,
+                        0x3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6b7 ,
+                        0x3255d606000000000000000000000000000000003255d6723255d6f63255d6ff ,
+                        0x3255d6ff3255d6ff3255d6ff3255d6ff3255d6ff3255d6f63255d67200000000 ,
+                        0x0000000000000000000000000000000000000000000000003255d6273255d68d ,
+                        0x3255d6cc3255d6fc3255d6fc3255d6cc3255d68d3255d6270000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    LayoutCachedLeft =4080
+                    LayoutCachedTop =5100
+                    LayoutCachedWidth =4656
+                    LayoutCachedHeight =5676
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =6840
+                    Width =4140
+                    Height =660
+                    Name ="lblEnvironment"
+                    Caption ="lblEnvironment"
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =6840
+                    LayoutCachedWidth =4200
+                    LayoutCachedHeight =7500
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2940
+                    Top =4320
+                    Width =2850
+                    Height =405
+                    TabIndex =4
+                    Name ="btnOpenDashBoard"
+                    Caption ="Open Dashboard"
+                    OnClick ="[Event Procedure]"
+
+                    LayoutCachedLeft =2940
+                    LayoutCachedTop =4320
+                    LayoutCachedWidth =5790
+                    LayoutCachedHeight =4725
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2940
+                    Top =3780
+                    Width =2850
+                    Height =405
+                    TabIndex =5
+                    Name ="cmdFrmUpdateLeadCharge"
+                    Caption ="Update Lead Charges"
+                    OnClick ="[Event Procedure]"
+
+                    LayoutCachedLeft =2940
+                    LayoutCachedTop =3780
+                    LayoutCachedWidth =5790
+                    LayoutCachedHeight =4185
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmMainMenu.cls"

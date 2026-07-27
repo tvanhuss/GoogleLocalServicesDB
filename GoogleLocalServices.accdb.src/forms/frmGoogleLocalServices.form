@@ -1,0 +1,615 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =10230
+    DatasheetFontHeight =11
+    ItemSuffix =31
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0x4f29d713ef1ae640
+    End
+    RecordSource ="GLS Local Services Calls"
+    Caption ="frmGoogleLocalServices"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =60.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =1080
+            Name ="FormHeader"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =4752
+                    Height =1020
+                    FontSize =20
+                    Name ="Label28"
+                    Caption ="frmGoogleLocalServices"
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =4812
+                    LayoutCachedHeight =1080
+                End
+            End
+        End
+        Begin Section
+            Height =8280
+            Name ="Detail"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =360
+                    Height =315
+                    ColumnWidth =1440
+                    Name ="ID"
+                    ControlSource ="ID"
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =4350
+                    LayoutCachedHeight =675
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =360
+                            Width =2460
+                            Height =330
+                            Name ="ID_Label"
+                            Caption ="ID"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =360
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =690
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =780
+                    Width =7260
+                    Height =600
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="Title"
+                    ControlSource ="Title"
+                    ShowDatePicker =0
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =780
+                    LayoutCachedWidth =10170
+                    LayoutCachedHeight =1380
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =780
+                            Width =2460
+                            Height =330
+                            Name ="Title_Label"
+                            Caption ="Title"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =780
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =1110
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =1500
+                    Width =2940
+                    Height =330
+                    ColumnWidth =2940
+                    TabIndex =2
+                    Name ="CallDate"
+                    ControlSource ="CallDate"
+                    Format ="General Date"
+                    StatusBarText ="Call Date"
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =1500
+                    LayoutCachedWidth =5850
+                    LayoutCachedHeight =1830
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =1500
+                            Width =2460
+                            Height =330
+                            Name ="CallDate_Label"
+                            Caption ="CallDate"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =1500
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =1830
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =1920
+                    Width =7260
+                    Height =600
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="Customer Phone Number"
+                    ControlSource ="Customer Phone Number"
+                    StatusBarText ="Enter phone number that call came from"
+                    EventProcPrefix ="Customer_Phone_Number"
+                    ShowDatePicker =0
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =1920
+                    LayoutCachedWidth =10170
+                    LayoutCachedHeight =2520
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =1920
+                            Width =2460
+                            Height =330
+                            Name ="Customer Phone Number_Label"
+                            Caption ="Customer Phone Number"
+                            EventProcPrefix ="Customer_Phone_Number_Label"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =1920
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =2250
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =2640
+                    Width =3660
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="CSR"
+                    ControlSource ="CSR"
+                    RowSourceType ="Value List"
+                    RowSource ="\"Lynsie\";\"Mackenzie\";\"Sarah\""
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =2640
+                    LayoutCachedWidth =6570
+                    LayoutCachedHeight =2970
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =2640
+                            Width =2460
+                            Height =330
+                            Name ="CSR_Label"
+                            Caption ="CSR"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =2640
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =2970
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =3060
+                    Width =3660
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =5
+                    Name ="Status"
+                    ControlSource ="Status"
+                    RowSourceType ="Value List"
+                    RowSource ="\"Not Booked\";\"Booked\";\"Canceled\";\"Quote\";\"Dispute\""
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =3060
+                    LayoutCachedWidth =6570
+                    LayoutCachedHeight =3390
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =3060
+                            Width =2460
+                            Height =330
+                            Name ="Status_Label"
+                            Caption ="Status"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3060
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =3390
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =3480
+                    Width =3660
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =6
+                    Name ="DisputeReason"
+                    ControlSource ="DisputeReason"
+                    RowSourceType ="Value List"
+                    RowSource ="\"Solicitation\";\"Spam\";\"Location Not Served\";\"Service Not Offered\";\"Dupl"
+                        "icate Lead\""
+                    StatusBarText ="Reason For Dispute"
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =3480
+                    LayoutCachedWidth =6570
+                    LayoutCachedHeight =3810
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =3480
+                            Width =2460
+                            Height =330
+                            Name ="DisputeReason_Label"
+                            Caption ="DisputeReason"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3480
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =3810
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2910
+                    Top =3900
+                    TabIndex =7
+                    Name ="DisputeApproved"
+                    ControlSource ="DisputeApproved"
+                    StatusBarText ="Was a refund granted"
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =3900
+                    LayoutCachedWidth =3170
+                    LayoutCachedHeight =4140
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =3900
+                            Width =2460
+                            Height =330
+                            Name ="DisputeApproved_Label"
+                            Caption ="DisputeApproved"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3900
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =4230
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =4320
+                    Width =2460
+                    Height =330
+                    ColumnWidth =2460
+                    TabIndex =8
+                    Name ="WO Number"
+                    ControlSource ="WO Number"
+                    EventProcPrefix ="WO_Number"
+                    ShowDatePicker =0
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =4320
+                    LayoutCachedWidth =5370
+                    LayoutCachedHeight =4650
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =4320
+                            Width =2460
+                            Height =330
+                            Name ="WO Number_Label"
+                            Caption ="WO Number"
+                            EventProcPrefix ="WO_Number_Label"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =4320
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =4650
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2910
+                    Top =4740
+                    TabIndex =9
+                    Name ="IsNewCustomer"
+                    ControlSource ="IsNewCustomer"
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =4740
+                    LayoutCachedWidth =3170
+                    LayoutCachedHeight =4980
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =4740
+                            Width =2460
+                            Height =330
+                            Name ="IsNewCustomer_Label"
+                            Caption ="IsNewCustomer"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =4740
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =5070
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =5160
+                    Width =3660
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =10
+                    Name ="GLS Call Type"
+                    ControlSource ="GLS Call Type"
+                    RowSourceType ="Value List"
+                    RowSource ="\"HVAC 689-538-8533\";\"ELEC 172-834-1701\";\"PLUM 783-953-1497\""
+                    EventProcPrefix ="GLS_Call_Type"
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =5160
+                    LayoutCachedWidth =6570
+                    LayoutCachedHeight =5490
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =5160
+                            Width =2460
+                            Height =330
+                            Name ="GLS Call Type_Label"
+                            Caption ="GLS Call Type"
+                            EventProcPrefix ="GLS_Call_Type_Label"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =5160
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =5490
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2910
+                    Top =5580
+                    Width =7260
+                    Height =1140
+                    ColumnWidth =3000
+                    TabIndex =11
+                    Name ="Note"
+                    ControlSource ="Note"
+                    TextFormat =1
+                    ShowDatePicker =0
+
+                    LayoutCachedLeft =2910
+                    LayoutCachedTop =5580
+                    LayoutCachedWidth =10170
+                    LayoutCachedHeight =6720
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =5580
+                            Width =2460
+                            Height =330
+                            Name ="Note_Label"
+                            Caption ="Note"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =5580
+                            LayoutCachedWidth =2820
+                            LayoutCachedHeight =5910
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3420
+                    Top =6960
+                    Height =315
+                    TabIndex =12
+                    Name ="Created By"
+                    ControlSource ="Created By"
+                    EventProcPrefix ="Created_By"
+
+                    LayoutCachedLeft =3420
+                    LayoutCachedTop =6960
+                    LayoutCachedWidth =4860
+                    LayoutCachedHeight =7275
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1620
+                            Top =6960
+                            Width =1080
+                            Height =315
+                            Name ="Label29"
+                            Caption ="Created By"
+                            LayoutCachedLeft =1620
+                            LayoutCachedTop =6960
+                            LayoutCachedWidth =2700
+                            LayoutCachedHeight =7275
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3900
+                    Top =7440
+                    Height =315
+                    TabIndex =13
+                    Name ="Modified By"
+                    ControlSource ="Modified By"
+                    EventProcPrefix ="Modified_By"
+
+                    LayoutCachedLeft =3900
+                    LayoutCachedTop =7440
+                    LayoutCachedWidth =5340
+                    LayoutCachedHeight =7755
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2100
+                            Top =7440
+                            Width =1200
+                            Height =315
+                            Name ="Label30"
+                            Caption ="Modified By"
+                            LayoutCachedLeft =2100
+                            LayoutCachedTop =7440
+                            LayoutCachedWidth =3300
+                            LayoutCachedHeight =7755
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="FormFooter"
+            AutoHeight =1
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End

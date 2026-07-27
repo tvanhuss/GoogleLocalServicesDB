@@ -1,0 +1,689 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    OrderByOn = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =11520
+    DatasheetFontHeight =11
+    ItemSuffix =35
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    OrderBy ="[tblCalls].[leadDate]"
+    RecSrcDt = Begin
+        0x8b4cacec0e1ee640
+    End
+    RecordSource ="tblCalls"
+    Caption ="frmCalls"
+    DatasheetFontName ="Calibri"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =15921906
+    DatasheetGridlinesColor12 =0
+    FitToScreen =1
+    DatasheetBackThemeColorIndex =1
+    BorderThemeColorIndex =3
+    ThemeFontIndex =1
+    ForeThemeColorIndex =0
+    AlternateBackThemeColorIndex =1
+    AlternateBackShade =95.0
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =0
+            BorderTint =50.0
+            ForeThemeColorIndex =0
+            ForeTint =60.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ThemeFontIndex =1
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =0
+            Name ="FormHeader"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =2
+            BackTint =20.0
+        End
+        Begin Section
+            Height =8100
+            Name ="Detail"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =360
+                    Width =3210
+                    Height =420
+                    ColumnWidth =3000
+                    Name ="leadNumber"
+                    ControlSource ="leadNumber"
+                    InputMask ="!\\(999\") \"000\\-0000;0;_"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =5460
+                    LayoutCachedHeight =780
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =360
+                            Width =1800
+                            Height =330
+                            Name ="leadNumber_Label"
+                            Caption ="leadNumber"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =360
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =690
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =840
+                    Width =1620
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =1
+                    Name ="leadDate"
+                    ControlSource ="leadDate"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =840
+                    LayoutCachedWidth =3870
+                    LayoutCachedHeight =1170
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =840
+                            Width =1800
+                            Height =330
+                            Name ="leadDate_Label"
+                            Caption ="leadDate"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =840
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =1170
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =1260
+                    Width =1530
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =2
+                    Name ="leadTime"
+                    ControlSource ="leadTime"
+                    Format ="Medium Time"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =1260
+                    LayoutCachedWidth =3780
+                    LayoutCachedHeight =1590
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =1260
+                            Width =1800
+                            Height =330
+                            Name ="leadTime_Label"
+                            Caption ="leadTime"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =1260
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =1590
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =1440
+                    Left =2250
+                    Top =1680
+                    Width =3660
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="ListStatus"
+                    ControlSource ="ListStatus"
+                    RowSourceType ="Value List"
+                    RowSource ="\"Booked\";\"Not Booked\";\"Canceled\";\"Qoute\";\"Disputed\";\"Completed\""
+                    ColumnWidths ="1440"
+                    AllowValueListEdits =0
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =1680
+                    LayoutCachedWidth =5910
+                    LayoutCachedHeight =2010
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =1680
+                            Width =1800
+                            Height =330
+                            Name ="ListStatus_Label"
+                            Caption ="ListStatus"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =1680
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =2010
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =2100
+                    Width =3210
+                    Height =420
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="leadCategory"
+                    ControlSource ="leadCategory"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =2100
+                    LayoutCachedWidth =5460
+                    LayoutCachedHeight =2520
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =2100
+                            Width =1800
+                            Height =330
+                            Name ="leadCategory_Label"
+                            Caption ="leadCategory"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =2100
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =2430
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =2580
+                    Width =5070
+                    Height =480
+                    ColumnWidth =3000
+                    TabIndex =5
+                    Name ="leadAddress"
+                    ControlSource ="leadAddress"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =2580
+                    LayoutCachedWidth =7320
+                    LayoutCachedHeight =3060
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =2580
+                            Width =1800
+                            Height =330
+                            Name ="leadAddress_Label"
+                            Caption ="leadAddress"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =2580
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =2910
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2250
+                    Top =3180
+                    ColumnWidth =1440
+                    TabIndex =6
+                    Name ="IsJobQoute"
+                    ControlSource ="IsJobQoute"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =3180
+                    LayoutCachedWidth =2510
+                    LayoutCachedHeight =3420
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =3180
+                            Width =1800
+                            Height =330
+                            Name ="IsJobQoute_Label"
+                            Caption ="IsJobQoute"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3180
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =3510
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =3600
+                    Width =5070
+                    Height =420
+                    ColumnWidth =3000
+                    TabIndex =7
+                    Name ="leadCity"
+                    ControlSource ="leadCity"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =3600
+                    LayoutCachedWidth =7320
+                    LayoutCachedHeight =4020
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =3600
+                            Width =1800
+                            Height =330
+                            Name ="leadCity_Label"
+                            Caption ="leadCity"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3600
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =3930
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =4080
+                    Width =5070
+                    Height =420
+                    ColumnWidth =3000
+                    TabIndex =8
+                    Name ="leadZip"
+                    ControlSource ="leadZip"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =4080
+                    LayoutCachedWidth =7320
+                    LayoutCachedHeight =4500
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =4080
+                            Width =1800
+                            Height =330
+                            Name ="leadZip_Label"
+                            Caption ="leadZip"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =4080
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =4410
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =4560
+                    Width =5070
+                    Height =420
+                    ColumnWidth =3000
+                    TabIndex =9
+                    Name ="leadCustomer Name"
+                    ControlSource ="leadCustomer Name"
+                    EventProcPrefix ="leadCustomer_Name"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =4560
+                    LayoutCachedWidth =7320
+                    LayoutCachedHeight =4980
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =4560
+                            Width =1800
+                            Height =330
+                            Name ="leadCustomer Name_Label"
+                            Caption ="leadCustomer Name"
+                            EventProcPrefix ="leadCustomer_Name_Label"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =4560
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =4890
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =5040
+                    Width =5070
+                    Height =420
+                    ColumnWidth =3000
+                    TabIndex =10
+                    Name ="leadEmailAddress"
+                    ControlSource ="leadEmailAddress"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =5040
+                    LayoutCachedWidth =7320
+                    LayoutCachedHeight =5460
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =5040
+                            Width =1800
+                            Height =330
+                            Name ="leadEmailAddress_Label"
+                            Caption ="leadEmailAddress"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =5040
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =5370
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2250
+                    Top =5520
+                    Width =5070
+                    Height =780
+                    ColumnWidth =3000
+                    TabIndex =11
+                    Name ="leadNotes"
+                    ControlSource ="leadNotes"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =5520
+                    LayoutCachedWidth =7320
+                    LayoutCachedHeight =6300
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =5520
+                            Width =1800
+                            Height =330
+                            Name ="leadNotes_Label"
+                            Caption ="leadNotes"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =5520
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =5850
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2250
+                    Top =6420
+                    TabIndex =12
+                    Name ="leadIsCharged"
+                    ControlSource ="leadIsCharged"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =6420
+                    LayoutCachedWidth =2510
+                    LayoutCachedHeight =6660
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =6420
+                            Width =1800
+                            Height =330
+                            Name ="leadIsCharged_Label"
+                            Caption ="leadIsCharged"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =6420
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =6750
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2250
+                    Top =6840
+                    TabIndex =13
+                    Name ="leadIsNewCustomer"
+                    ControlSource ="leadIsNewCustomer"
+
+                    LayoutCachedLeft =2250
+                    LayoutCachedTop =6840
+                    LayoutCachedWidth =2510
+                    LayoutCachedHeight =7080
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =360
+                            Top =6840
+                            Width =1800
+                            Height =330
+                            Name ="leadIsNewCustomer_Label"
+                            Caption ="leadIsNewCustomer"
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =6840
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =7170
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9390
+                    Top =360
+                    Width =2070
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =14
+                    Name ="leadWONum"
+                    ControlSource ="leadWONum"
+
+                    LayoutCachedLeft =9390
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =11460
+                    LayoutCachedHeight =690
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =7500
+                            Top =360
+                            Width =1800
+                            Height =330
+                            Name ="leadWONum_Label"
+                            Caption ="leadWONum"
+                            LayoutCachedLeft =7500
+                            LayoutCachedTop =360
+                            LayoutCachedWidth =9300
+                            LayoutCachedHeight =690
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9390
+                    Top =780
+                    Width =2070
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =15
+                    Name ="leadWOAmount"
+                    ControlSource ="leadWOAmount"
+                    Format ="$#,##0.00;($#,##0.00)"
+
+                    LayoutCachedLeft =9390
+                    LayoutCachedTop =780
+                    LayoutCachedWidth =11460
+                    LayoutCachedHeight =1110
+                    CurrencySymbol ="$"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =7500
+                            Top =780
+                            Width =1800
+                            Height =330
+                            Name ="leadWOAmount_Label"
+                            Caption ="leadWOAmount"
+                            LayoutCachedLeft =7500
+                            LayoutCachedTop =780
+                            LayoutCachedWidth =9300
+                            LayoutCachedHeight =1110
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9390
+                    Top =1200
+                    Width =2070
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =16
+                    Name ="leadEstCharge"
+                    ControlSource ="leadEstCharge"
+                    Format ="$#,##0.00;($#,##0.00)"
+
+                    LayoutCachedLeft =9390
+                    LayoutCachedTop =1200
+                    LayoutCachedWidth =11460
+                    LayoutCachedHeight =1530
+                    CurrencySymbol ="$"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =7500
+                            Top =1200
+                            Width =1800
+                            Height =330
+                            Name ="leadEstCharge_Label"
+                            Caption ="leadEstCharge"
+                            LayoutCachedLeft =7500
+                            LayoutCachedTop =1200
+                            LayoutCachedWidth =9300
+                            LayoutCachedHeight =1530
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="FormFooter"
+            AlternateBackThemeColorIndex =1
+            AlternateBackShade =95.0
+            BackThemeColorIndex =1
+        End
+    End
+End
