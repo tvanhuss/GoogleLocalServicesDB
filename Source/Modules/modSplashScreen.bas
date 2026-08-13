@@ -26,7 +26,7 @@ Public Function GetAttachedTablesInfo() As String
         ' Check if the table is a linked/attached table
         If (tdf.Attributes And dbAttachedTable) Or (tdf.Attributes And dbAttachSavePWD) Then
             result = result & "Table: " & tdf.Name & vbCrLf & _
-                      "Source: " & tdf.Connect & vbCrLf & vbCrLf
+                      "Source: " & tdf.Connect & vbCrLf
         End If
     Next tdf
     
