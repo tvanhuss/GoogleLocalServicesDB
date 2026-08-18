@@ -1,5 +1,7 @@
 Attribute VB_Name = "modImportOldCallsTable"
 Public Sub AssignTempLeadIDs()
+
+    On Error GoTo AssignTempLeadIDs_Error
     Dim db As DAO.Database
     Dim rs As DAO.Recordset
     Dim nextID As Long
@@ -22,6 +24,15 @@ Public Sub AssignTempLeadIDs()
     Set db = Nothing
     
     MsgBox "Lead IDs assigned successfully." & vbCrLf & _
-           "IDs used: 1001 through " & (nextID - 1), vbInformation
+        "IDs used: 1001 through " & (nextID - 1), vbInformation
+    
+    On Error GoTo 0
+    Exit Sub
+
+AssignTempLeadIDs_Error:
+
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure AssignTempLeadIDs, line " & Erl & "."
+
 End Sub
+
 

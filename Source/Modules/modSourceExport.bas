@@ -37,6 +37,8 @@ ErrorHandler:
 End Sub
 
 Private Sub ExportForms(ByVal destinationFolder As String)
+
+    On Error GoTo ExportForms_Error
     Dim obj As AccessObject
 
     For Each obj In CurrentProject.AllForms
@@ -45,9 +47,19 @@ Private Sub ExportForms(ByVal destinationFolder As String)
             obj.Name, _
             destinationFolder & "\" & SafeFileName(obj.Name) & ".txt"
     Next obj
+    
+    On Error GoTo 0
+    Exit Sub
+
+ExportForms_Error:
+
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure ExportForms, line " & Erl & "."
+
 End Sub
 
 Private Sub ExportReports(ByVal destinationFolder As String)
+
+    On Error GoTo ExportReports_Error
     Dim obj As AccessObject
 
     For Each obj In CurrentProject.AllReports
@@ -56,6 +68,14 @@ Private Sub ExportReports(ByVal destinationFolder As String)
             obj.Name, _
             destinationFolder & "\" & SafeFileName(obj.Name) & ".txt"
     Next obj
+    
+    On Error GoTo 0
+    Exit Sub
+
+ExportReports_Error:
+
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure ExportReports, line " & Erl & "."
+
 End Sub
 
 Private Sub ExportModules( _

@@ -5,17 +5,29 @@ Option Explicit
 
 '=== Put this in a standard module (e.g. modUtilities) ===
 Public Function OpenFormIfHasRecords(FormName As String, QueryName As String) As Boolean
+
+    On Error GoTo OpenFormIfHasRecords_Error
     If DCount("*", QueryName) = 0 Then
         MsgBox "There are no records to display at this time." & vbCrLf & vbCrLf & _
-               "Source: " & QueryName, vbInformation, "No Records"
+            "Source: " & QueryName, vbInformation, "No Records"
         OpenFormIfHasRecords = False
     Else
         DoCmd.OpenForm FormName
         OpenFormIfHasRecords = True
     End If
+    
+    On Error GoTo 0
+    Exit Function
+
+OpenFormIfHasRecords_Error:
+
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure OpenFormIfHasRecords, line " & Erl & "."
+
 End Function
 
 Public Function CleanPhoneNumber(ByVal strPhone As String) As String
+
+    On Error GoTo CleanPhoneNumber_Error
     Dim i As Long
     Dim strDigits As String
     Dim char As String
@@ -37,4 +49,12 @@ Public Function CleanPhoneNumber(ByVal strPhone As String) As String
     End If
     
     CleanPhoneNumber = strDigits
+    
+    On Error GoTo 0
+    Exit Function
+
+CleanPhoneNumber_Error:
+
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure CleanPhoneNumber, line " & Erl & "."
+
 End Function
